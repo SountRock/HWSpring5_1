@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: HWSpring2
+
+query:
+  updateStatusById: "UPDATE TASKS t SET t.status=:status WHERE t.id=:id"
+  clear: "truncate table tasks"
